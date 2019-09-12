@@ -50,15 +50,15 @@ data class EnumTest (
 {
     /**
     * 
-    * Values: uPPER,lower,eMPTY
+    * Values: UPPER,LOWER,EMPTY
     */
     enum class EnumString(val value: kotlin.String){
     
-        @Json(name = "UPPER") uPPER("UPPER"),
+        @Json(name = "UPPER") UPPER("UPPER"),
     
-        @Json(name = "lower") lower("lower"),
+        @Json(name = "lower") LOWER("lower"),
     
-        @Json(name = "") eMPTY("");
+        @Json(name = "") EMPTY("");
     
     }
 }
@@ -66,15 +66,15 @@ data class EnumTest (
 {
     /**
     * 
-    * Values: uPPER,lower,eMPTY
+    * Values: UPPER,LOWER,EMPTY
     */
     enum class EnumStringRequired(val value: kotlin.String){
     
-        @Json(name = "UPPER") uPPER("UPPER"),
+        @Json(name = "UPPER") UPPER("UPPER"),
     
-        @Json(name = "lower") lower("lower"),
+        @Json(name = "lower") LOWER("lower"),
     
-        @Json(name = "") eMPTY("");
+        @Json(name = "") EMPTY("");
     
     }
 }
@@ -82,13 +82,13 @@ data class EnumTest (
 {
     /**
     * 
-    * Values: _1,minus1
+    * Values: _1,MINUS1
     */
     enum class EnumInteger(val value: kotlin.Int){
     
         @Json(name = 1) _1(1),
     
-        @Json(name = -1) minus1(-1);
+        @Json(name = -1) MINUS1(-1);
     
     }
 }
@@ -96,13 +96,13 @@ data class EnumTest (
 {
     /**
     * 
-    * Values: _1period1,minus1Period2
+    * Values: _1PERIOD1,MINUS1PERIOD2
     */
     enum class EnumNumber(val value: kotlin.Double){
     
-        @Json(name = 1.1) _1period1(1.1),
+        @Json(name = 1.1) _1PERIOD1(1.1),
     
-        @Json(name = -1.2) minus1Period2(-1.2);
+        @Json(name = -1.2) MINUS1PERIOD2(-1.2);
     
     }
 }

@@ -34,13 +34,13 @@ data class MapTest (
 {
     /**
     * 
-    * Values: uPPER,lower
+    * Values: UPPER,LOWER
     */
     enum class MapOfEnumString(val value: kotlin.collections.Map<kotlin.String, kotlin.String>){
     
-        @Json(name = "UPPER") uPPER("UPPER"),
+        @Json(name = "UPPER") UPPER("UPPER"),
     
-        @Json(name = "lower") lower("lower");
+        @Json(name = "lower") LOWER("lower");
     
     }
 }

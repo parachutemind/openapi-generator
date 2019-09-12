@@ -54,7 +54,7 @@ public abstract class AbstractKotlinCodegen extends DefaultCodegen implements Co
     protected String modelDocPath = "docs/";
     protected boolean parcelizeModels = false;
 
-    protected CodegenConstants.ENUM_PROPERTY_NAMING_TYPE enumPropertyNaming = CodegenConstants.ENUM_PROPERTY_NAMING_TYPE.camelCase;
+    protected CodegenConstants.ENUM_PROPERTY_NAMING_TYPE enumPropertyNaming = CodegenConstants.ENUM_PROPERTY_NAMING_TYPE.UPPERCASE;
     protected SERIALIZATION_LIBRARY_TYPE serializationLibrary = SERIALIZATION_LIBRARY_TYPE.moshi;
 
     public AbstractKotlinCodegen() {

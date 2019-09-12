@@ -16,21 +16,21 @@ import com.squareup.moshi.Json
 
 /**
 * 
-* Values: abc,minusEfg,leftParenthesisXyzRightParenthesis
+* Values: _ABC,MINUSEFG,LEFT_PARENTHESISXYZRIGHT_PARENTHESIS
 */
 enum class EnumClass(val value: kotlin.String){
 
 
     @Json(name = "_abc")
-    abc("_abc"),
+    _ABC("_abc"),
 
 
     @Json(name = "-efg")
-    minusEfg("-efg"),
+    MINUSEFG("-efg"),
 
 
     @Json(name = "(xyz)")
-    leftParenthesisXyzRightParenthesis("(xyz)");
+    LEFT_PARENTHESISXYZRIGHT_PARENTHESIS("(xyz)");
 
 
 }

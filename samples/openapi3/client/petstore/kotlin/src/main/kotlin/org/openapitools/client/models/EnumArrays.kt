@@ -28,13 +28,13 @@ data class EnumArrays (
 {
     /**
     * 
-    * Values: greaterThanEqual,dollar
+    * Values: GREATER_THANEQUAL,DOLLAR
     */
     enum class JustSymbol(val value: kotlin.String){
     
-        @Json(name = ">=") greaterThanEqual(">="),
+        @Json(name = ">=") GREATER_THANEQUAL(">="),
     
-        @Json(name = "$") dollar("$");
+        @Json(name = "$") DOLLAR("$");
     
     }
 }
@@ -42,13 +42,13 @@ data class EnumArrays (
 {
     /**
     * 
-    * Values: fish,crab
+    * Values: FISH,CRAB
     */
     enum class ArrayEnum(val value: kotlin.String){
     
-        @Json(name = "fish") fish("fish"),
+        @Json(name = "fish") FISH("fish"),
     
-        @Json(name = "crab") crab("crab");
+        @Json(name = "crab") CRAB("crab");
     
     }
 }

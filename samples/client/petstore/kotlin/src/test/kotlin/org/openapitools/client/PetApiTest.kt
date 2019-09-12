@@ -49,7 +49,7 @@ class PetApiTest : ShouldSpec() {
             result.size.shouldBeGreaterThan(0)
 
             for(onePet in result) {
-                onePet.status.shouldBe(Pet.Status.available)
+                onePet.status.shouldBe(Pet.Status.AVAILABLE)
             }
 
             val result2 = api.findPetsByStatus(arrayOf("unknown_and_incorrect_status"))
@@ -62,7 +62,7 @@ class PetApiTest : ShouldSpec() {
             val pet = Pet(
                     id = petId,
                     name = "kotlin client updatePet",
-                    status = Pet.Status.pending,
+                    status = Pet.Status.PENDING,
                     photoUrls = arrayOf("http://test_kotlin_unit_test.com")
             )
             api.updatePet(pet)
@@ -71,7 +71,7 @@ class PetApiTest : ShouldSpec() {
             val result = api.getPetById(petId)
             result.id shouldBe (petId)
             result.name shouldBe ("kotlin client updatePet")
-            result.status shouldBe (Pet.Status.pending)
+            result.status shouldBe (Pet.Status.PENDING)
 
         }
 
@@ -85,7 +85,7 @@ class PetApiTest : ShouldSpec() {
             val result = api.getPetById(petId)
             result.id shouldBe (petId)
             result.name shouldBe ("kotlin client updatePet with Form")
-            result.status shouldBe (Pet.Status.pending)
+            result.status shouldBe (Pet.Status.PENDING)
 
         }
 

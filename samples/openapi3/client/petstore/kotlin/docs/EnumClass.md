@@ -4,11 +4,11 @@
 ## Enum
 
 
-    * `abc` (value: `"_abc"`)
+    * `_ABC` (value: `"_abc"`)
 
-    * `minusEfg` (value: `"-efg"`)
+    * `MINUSEFG` (value: `"-efg"`)
 
-    * `leftParenthesisXyzRightParenthesis` (value: `"(xyz)"`)
+    * `LEFT_PARENTHESISXYZRIGHT_PARENTHESIS` (value: `"(xyz)"`)
 
 
 

@@ -30,13 +30,13 @@ data class InlineObject2 (
 {
     /**
     * Form parameter enum test (string array)
-    * Values: greaterThan,dollar
+    * Values: GREATER_THAN,DOLLAR
     */
     enum class EnumFormStringArray(val value: kotlin.String){
     
-        @Json(name = ">") greaterThan(">"),
+        @Json(name = ">") GREATER_THAN(">"),
     
-        @Json(name = "$") dollar("$");
+        @Json(name = "$") DOLLAR("$");
     
     }
 }
@@ -44,15 +44,15 @@ data class InlineObject2 (
 {
     /**
     * Form parameter enum test (string)
-    * Values: abc,minusEfg,leftParenthesisXyzRightParenthesis
+    * Values: _ABC,MINUSEFG,LEFT_PARENTHESISXYZRIGHT_PARENTHESIS
     */
     enum class EnumFormString(val value: kotlin.String){
     
-        @Json(name = "_abc") abc("_abc"),
+        @Json(name = "_abc") _ABC("_abc"),
     
-        @Json(name = "-efg") minusEfg("-efg"),
+        @Json(name = "-efg") MINUSEFG("-efg"),
     
-        @Json(name = "(xyz)") leftParenthesisXyzRightParenthesis("(xyz)");
+        @Json(name = "(xyz)") LEFT_PARENTHESISXYZRIGHT_PARENTHESIS("(xyz)");
     
     }
 }

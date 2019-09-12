@@ -4,11 +4,11 @@
 ## Enum
 
 
-    * `placed` (value: `"placed"`)
+    * `PLACED` (value: `"placed"`)
 
-    * `approved` (value: `"approved"`)
+    * `APPROVED` (value: `"approved"`)
 
-    * `delivered` (value: `"delivered"`)
+    * `DELIVERED` (value: `"delivered"`)
 
 
 
